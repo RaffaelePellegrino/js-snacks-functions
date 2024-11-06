@@ -21,7 +21,7 @@ function SalutoDateHours(nome){
     }else{
         saluto="Buonasera";
     }
-    return `${saluto}, ` + nome ;
+    return `${saluto}, ${nome}` ;
 }
 
 
