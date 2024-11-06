@@ -7,12 +7,27 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-
+let nomeSecondario = 'Mario';
 // Dichiara la funzione qui.
+function SalutoDateHours(nome){
+    const ora = new Date().getHours();
+    
+    let saluto = '';
+    
+    if (ora<13){
+        saluto="Buongiorno";
+    }else if(ora<18){
+        saluto="Buon pomeriggio";
+    }else{
+        saluto="Buonasera";
+    }
+    return `${saluto}, ` + nome ;
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(SalutoDateHours(nomeSecondario));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
